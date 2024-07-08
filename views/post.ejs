@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container write">
+    <div class="bd-example-snippet bd-code-snippet">
+        <div class="bd-example m-0 border-0">
+          
+      <form action="/blog" method="post">
+        <div class="mb-3">
+          <label class="form-label">Heading</label>
+          <input type="text" class="form-control" id="exampleInputEmail1"  name="Heading" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">1000 characters max</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Blog</label>
+          <textarea name="bloggg" id="exampleInputPassword1" class="form-control" placeholder="Write your blog" style="height: 300px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+</div>
+
+
+<%- include("partials/footer.ejs") %>

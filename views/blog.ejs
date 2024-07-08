@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<div class="container">
+
+    <% if(locals.post && locals.heading) { %>
+        <% for(let i in post){ %>
+            <h1 class="master" style="text-align: center; padding: 20px;"><%= heading[i] %></h1>
+            <p class="master" style="text-align: center;padding: 20px;"><%= post[i] %></p>
+            <% } %>
+            <% }else{ %>
+                <h1 class="master" style="text-align: center;">Blank</h1>
+                <% } %>
+</div>
+                
+
+<%- include("partials/footer.ejs") %>
